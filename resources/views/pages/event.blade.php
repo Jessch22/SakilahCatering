@@ -5,11 +5,10 @@
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/pages/event.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/eventcard.css')}}">
+<link rel="stylesheet" href="{{ asset('css/components/logomarquee.css')}}">
 @endpush
 
-@section('title-hero')
-Event Kami
-@endsection
+@section('title-hero', 'Event Kami')
 
 @section('content')
 <div class="event-container">
@@ -17,4 +16,6 @@ Event Kami
         <x-event-card />
     @endfor
 </div>
+
+<x-logo-marquee />
 @endsection
