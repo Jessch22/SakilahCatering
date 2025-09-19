@@ -1,0 +1,39 @@
+:root{
+  /* PRIMARY COLOR */
+  --color-primary: #2D6CDE;
+  --color-accent: #F3F16A;
+
+  /* SUPPORT COLOR */
+  --color-alt-light: #46C2DA;
+  --color-alt-dark: #472FF7;
+  --color-bg: #F2F7FF;
+
+  /* NEUTRAL */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #666666;
+
+  /* FONT */
+  --font-main: 'Poppins', sans-serif;
+  --font-accent: 'Imperial Script', cursive;
+
+  --h1: 32px;
+  --h2: 24px;
+  --h3: 16px;
+  --h4: 8px;
+}
+
+body{
+  font-family: var(--font-main);
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+h1{font-size: 32px}
+h2{font-size: 24px}
+h3{font-size: 16px; font-weight: normal;}
+h4{font-size: 8px}
+
+h1,h2,h3,h4{
+  margin: 0;
+}

@@ -1,0 +1,29 @@
+body{
+  font-family: var(--font-main);
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+.hero{
+  background-color: var(--color-primary);
+  padding: 40px 0 56px 0;
+  margin: 0;
+}
+
+.title{
+  font-size: 32px;
+  margin: 0 128px;
+  color: var(--color-white);
+}
+
+.accent{
+  background-color: var(--color-accent);
+  height: 16px;
+  width: 160px;
+  margin: -2px 128px 0 128px;
+}
+
+.content{
+  margin: 0 128px;
+}
+

@@ -1,0 +1,6 @@
+.event-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 20px;
+  padding: 20px;
+}

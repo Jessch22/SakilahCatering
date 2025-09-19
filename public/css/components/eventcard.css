@@ -1,0 +1,10 @@
+.event-card{
+  max-width: 320px;
+  padding: 20px 0;
+}
+
+.event-card img{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
