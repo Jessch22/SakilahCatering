@@ -1,0 +1,142 @@
+/* SECTION */
+.blue-section{
+  background-color: var(--color-primary);
+  min-height: 70vh;
+  padding: 8vh 0;
+}
+
+.white-section{
+  padding: 0 var(--marginside);
+}
+
+.blue-section .center{
+  text-align: center;
+  color: var(--color-white);
+}
+
+.white-section, .blue-section{
+  margin: 64px 0;
+}
+
+.title-white-section{
+  margin: 40px 0;
+  color: var(--color-primary);
+}
+
+.accent-content{
+  background-color: var(--color-accent);
+  height: 20px;
+  width: 320px;
+  margin: -18px 0 0 16px;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 430px;
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--color-primary) 0%, #2560b500 60%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  color: var(--color-white);
+}
+
+.hero-title {
+  font-family: var(--font-accent);
+  font-size: 12vh;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 12px rgba(30,48,88,0.25);
+}
+
+.hero-slogan {
+  font-size: 3vh;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 6px rgba(30,48,88,0.15);
+}
+
+.hero-btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-black);
+  padding: 12px 36px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(11,25,53,0.14);
+  transition: background 0.2s, color 0.2s;
+}
+.hero-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-black);
+}
+
+@media (max-width: 700px) {
+  .hero-title { font-size: 3.2rem; }
+  .hero-slogan { font-size: 1.0rem; }
+  .hero-btn { font-size: 1rem; padding: 9px 22px; }
+}
+
+/* ABOUT US */
+.about-us-content{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 6vh;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.about-us-image{
+  aspect-ratio: 1/1;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.about-us-isi{
+  margin: 0 0 20px 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-us-btn{
+  background-color: var(--color-accent);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: var(--color-black);
+  margin: 32px 0;
+  font-weight: 600;
+}
+
+/* MENU PAKET */
+.card-hover-container{
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin: 0 0 56px 0;
+}
