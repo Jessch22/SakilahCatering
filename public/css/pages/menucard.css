@@ -1,0 +1,98 @@
+/* Pengaturan dasar untuk halaman */
+body {
+    background-color: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto; 
+    justify-content: flex-start; 
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Styling tambahan untuk scrollbar agar lebih bagus (opsional) */
+.card-container::-webkit-scrollbar {
+    height: 8px;
+}
+.card-container::-webkit-scrollbar-thumb {
+    background: var(--color-bg);
+    border-radius: 10px;
+}
+.card-container::-webkit-scrollbar-thumb:hover {
+    background: var(--color-grey);
+}
+
+/* Wadah utama kartu menu */
+.menu-card {
+    background-color: var(--color-white);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    flex-shrink: 0; /* INI KUNCINYA: Mencegah kartu penyusutan */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sisa CSS lainnya tetap sama */
+.menu-card-image, .menu-card-image-2 {
+    height: 220px;
+    width: 100%;
+}
+.menu-card-image {
+    background-color: var(--color-black);
+}
+.menu-card-image-2 {
+    background-color: #4a4a4a;
+}
+.menu-card-content {
+    padding: 24px;
+}
+.menu-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+.menu-items {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-grey);
+    margin-bottom: 24px;
+    min-height: 75px;
+}
+.cta-container {
+    text-align: center;
+}
+.cta-info {
+    font-size: 10px;
+    color: var(--color-grey);
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+.cta-button:hover {
+    background-color: var(--color-accent);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
