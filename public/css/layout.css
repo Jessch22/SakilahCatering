@@ -28,9 +28,9 @@ body{
 }
 
 .content{
-  margin: 56px 16vw;
+  margin: 56px 16vw 0 16vw;
 }
 
 .home-content{
-  margin: 56px 0;
+  margin: 56px 0 0 0;
 }
