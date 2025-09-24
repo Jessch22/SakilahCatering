@@ -1,0 +1,21 @@
+.testi-card{
+  background-color: var(--color-white);
+  padding: 18px;
+  max-width: 18vw;
+}
+
+.testi-card img{
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.testi-name{
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.testi-isi{
+  font-size: 12px;
+  text-align: justify;
+}

@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{{ asset('css/pages/home.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/logomarquee.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/cardhover.css')}}">
+<link rel="stylesheet" href="{{ asset('css/components/testicard.css')}}">
 @endpush
 
 @section('title-hero', 'Event Kami')
@@ -40,9 +41,17 @@
 </div>
 
 
-<div class="blue-section">
+<div class="blue-section company-profile">
   <h2 class="center">Company Profile</h2>
-
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0&autoplay=1&loop=1&playlist=D0UnqGm_miA&modestbranding=1&rel=0" 
+      title="YouTube video player" 
+      allow="autoplay; encrypted-media" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 <div class="white-section">
@@ -69,9 +78,17 @@
   </div>
 </div>
 
-<div class="blue-section">
+<div class="blue-section testi">
   <h2 class="center">Testimoni</h2>
-
+  <div class="testi-wrapper">
+    <button class="prev">&lt;</button>
+    <div class="testi-container">
+      @for ($i = 1; $i <= 3; $i++)
+          <x-testi-card class="testi-card"/>
+      @endfor
+    </div>
+    <button class="next">&gt;</button>
+  </div>
 </div>
 
 <div class="white-section">
@@ -82,7 +99,11 @@
   <x-logo-marquee />
 </div>
 
-<div class="blue-section">
+<div class="blue-section achievements">
   <h2>Our Achievements</h2>
 </div>
 @endsection
+
+@push('scripts')
+<script src="{{ asset('js/components/testicard-scroll.js')}}"></script>
+@endpush
