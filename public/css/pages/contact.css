@@ -1,10 +1,18 @@
 /* MAPS */
 .iframe-container {
   width: 100vw;
-  height: 28vw;
+  aspect-ratio: 2/1;
   max-width: 100%;
   overflow: hidden;
 }
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .responsive-map {
   width: 100vw;
   height: 60vw;
@@ -17,13 +25,12 @@
   }
 }
 
-
-
 /* CONTACT INFO */
 .contact-info {
   padding: 2rem 1.5rem;
   border-radius: 8px;
   max-width: 420px;
+  text-align: justify;
 }
 
 .contact-row {
@@ -58,11 +65,10 @@
 }
 
 @media (max-width: 480px) {
-  .contact-info {
-    padding: 1.2rem 0.7rem;
+  .contact-info{
+    padding: 40px 0;
   }
   .contact-icon {
     width: 1.9rem;
-    margin-right: 0.7rem;
   }
 }

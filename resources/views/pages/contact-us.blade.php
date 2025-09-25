@@ -26,7 +26,7 @@
 <div class="contact-info">
   <div class="contact-row">
     <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-    <span class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</span>
+    <span class="contact-text">Jl. KH. Moh.Seman No. 8B, Jatikramat, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17421</span>
   </div>
   <div class="contact-row centered">
     <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
