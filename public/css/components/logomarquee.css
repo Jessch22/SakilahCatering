@@ -1,7 +1,7 @@
 .logo-marquee {
   overflow: hidden;
   width: 100%;
-  background: #fff;
+  background: var(--color-bg);
   border-radius: 12px;
 }
 
@@ -9,11 +9,10 @@
   display: flex;
   width: max-content;
   animation: marquee 20s linear infinite;
-  /* optionally, add will-change: transform for performance */
 }
 
 .logo-track:hover {
-  animation-play-state: paused; /* Ini yang bikin animasinya berhenti! */
+  animation-play-state: paused;
 }
 
 .logo-track img {
