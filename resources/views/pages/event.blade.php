@@ -5,17 +5,16 @@
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/pages/event.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/eventcard.css')}}">
-<link rel="stylesheet" href="{{ asset('css/components/logomarquee.css')}}">
 @endpush
 
 @section('title-hero', 'Event Kami')
 
 @section('content')
+
 <div class="event-container">
     @for ($i = 1; $i <= 14; $i++)
         <x-event-card />
     @endfor
 </div>
 
-<x-logo-marquee />
 @endsection
