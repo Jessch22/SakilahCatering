@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="{{ asset('css/components/logomarquee.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/cardhover.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/testicard.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 @endpush
 
 @section('title-hero', 'Event Kami')
@@ -81,13 +82,13 @@
 <div class="blue-section testi">
   <h2 class="center">Testimoni</h2>
   <div class="testi-wrapper">
-    <button class="prev">&lt;</button>
+    <button class="prev"><i class="fas fa-chevron-left"></i></button>
     <div class="testi-container">
       @for ($i = 1; $i <= 3; $i++)
           <x-testi-card class="testi-card"/>
       @endfor
     </div>
-    <button class="next">&gt;</button>
+    <button class="next"><i class="fas fa-chevron-right"></i></button>
   </div>
 </div>
 
@@ -101,6 +102,20 @@
 
 <div class="blue-section achievements">
   <h2>Our Achievements</h2>
+  <div class="achievements-list">
+    <div class="achievement-item">
+        <span class="achievement-main">100+</span>
+        <span class="achievement-desc">events</span>
+    </div>
+    <div class="achievement-item">
+        <span class="achievement-main">10+</span>
+        <span class="achievement-desc">year(s) experience</span>
+    </div>
+    <div class="achievement-item">
+        <span class="achievement-main">250+</span>
+        <span class="achievement-desc">customer(s)</span>
+    </div>
+  </div>
 </div>
 @endsection
 
