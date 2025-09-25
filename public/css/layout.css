@@ -16,7 +16,7 @@ body{
 
 .title{
   font-size: 32px;
-  margin: 0 128px;
+  margin: 0 16vw;
   color: var(--color-white);
 }
 
@@ -24,7 +24,7 @@ body{
   background-color: var(--color-accent);
   height: 16px;
   width: 240px;
-  margin: -2px 128px 0 128px;
+  margin: -2px 16vw 0 16vw;
 }
 
 .content{
