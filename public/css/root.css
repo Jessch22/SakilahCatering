@@ -21,6 +21,8 @@
   --h2: 24px;
   --h3: 16px;
   --h4: 8px;
+
+  --marginside: 16vw;
 }
 
 body{
