@@ -5,3 +5,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.event');
 });
+
+
+Route::get('/about-us', function () {
+    return view('pages.about-us');
+});

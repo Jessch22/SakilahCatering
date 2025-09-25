@@ -1,0 +1,40 @@
+/* ABOUT US */
+.about-us-content{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 6vh;
+  align-items: center;
+  justify-content: stretch;
+  margin: 56px 0;
+}
+
+.about-us-image{
+  aspect-ratio: 1/1;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.about-us-isi{
+  /* padding: 0 0 20px 0; */
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.logo-marquee-content{
+  margin: 56px 0 300px 0;
+}
+
+.logo-marquee-content h2{
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 752px) {
+  .about-us-content{
+    display: block;
+  }
+  .about-us-image{
+    height: 68vw;
+  }
+}
