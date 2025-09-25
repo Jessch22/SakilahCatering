@@ -10,6 +10,10 @@ body{
   margin: 0;
 }
 
+.hero-home{
+  margin: 0;
+}
+
 .title{
   font-size: 32px;
   margin: 0 128px;
@@ -19,11 +23,14 @@ body{
 .accent{
   background-color: var(--color-accent);
   height: 16px;
-  width: 160px;
+  width: 240px;
   margin: -2px 128px 0 128px;
 }
 
 .content{
-  margin: 0 128px;
+  margin: 56px 16vw 0 16vw;
 }
 
+.home-content{
+  margin: 56px 0 0 0;
+}
