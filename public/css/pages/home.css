@@ -1,0 +1,316 @@
+/* SECTION */
+.blue-section{
+  background-color: var(--color-primary);
+  min-height: 30vw;
+  padding: 8vh 0;
+}
+
+.white-section{
+  padding: 0 var(--marginside);
+}
+
+.blue-section .center{
+  text-align: center;
+  color: var(--color-white);
+}
+
+.white-section, .blue-section{
+  margin: 64px 0 0 0;
+}
+
+.title-white-section{
+  margin: 40px 0;
+  color: var(--color-primary);
+}
+
+.accent-content{
+  background-color: var(--color-accent);
+  height: 20px;
+  width: 20vw;
+  margin: -18px 0 0 16px;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 430px;
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--color-primary) 0%, #2560b500 60%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  color: var(--color-white);
+}
+
+.hero-title {
+  font-family: var(--font-accent);
+  font-size: 12vh;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 12px rgba(30,48,88,0.25);
+}
+
+.hero-slogan {
+  font-size: 3vh;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 6px rgba(30,48,88,0.15);
+}
+
+.hero-btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-black);
+  padding: 12px 36px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(11,25,53,0.14);
+  transition: background 0.2s, color 0.2s;
+}
+.hero-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-black);
+}
+
+@media (max-width: 700px) {
+  .hero-title { font-size: 3.2rem; }
+  .hero-slogan { font-size: 1.0rem; }
+  .hero-btn { font-size: 1rem; padding: 9px 22px; }
+}
+
+/* ABOUT US */
+.about-us-content{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 6vh;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.about-us-image{
+  aspect-ratio: 1/1;
+  height: 24vw;
+  object-fit: cover;
+}
+
+.about-us-isi{
+  /* padding: 0 0 20px 0; */
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-us-btn{
+  background-color: var(--color-accent);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: var(--color-black);
+  margin: 32px 0;
+  font-weight: 600;
+}
+
+@media (max-width: 752px) {
+  .about-us-content{
+    display: block;
+  }
+  .about-us-image{
+    height: 68vw;
+  }
+}
+
+/* COMPANY PROFILE */
+.video-container {
+  position: relative;
+  width: 80vw;
+  max-width: 800px;  
+  margin: 40px auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* MENU PAKET */
+.card-hover-container{
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin: 0 0 56px 0;
+}
+
+/* TESTIMONI */
+.testi-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testi-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 56px var(--marginside);
+  transition: all 0.3s;
+}
+
+.prev, .next {
+  display: none;
+  background: var(--color-white);
+  border: none;
+  font-size: 1.5rem; /* ukuran icon */
+  width: 48px;       /* lebar sama tinggi */
+  height: 48px;
+  cursor: pointer;
+  border-radius: 50%;  /* bikin bulat */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.13);
+  transition: background 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* biar icon pas di tengah */
+  visibility: hidden;
+}
+
+.prev:active, .next:active {
+  background: var(--color-white);
+}
+
+.testi-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 56px var(--marginside);
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* RESPONSIVE (mobile) */
+@media (max-width: 900px) {
+  .testi-wrapper {
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px; /* Biar tombol tidak terlalu pinggir */
+    gap: 0;
+  }
+  .testi-container {
+    overflow: hidden;
+    width: 90vw;     /* Supaya ikut lebar layar, tidak lebih dari viewport */
+    max-width: 350px; /* Batas maksimal biar tetap proporsional */
+    margin: 32px 0;
+    display: flex;
+    transition: opacity 0.3s ease;
+  }
+  .testi-card {
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    transition: opacity 0.3s ease;
+  }
+  .prev, .next {
+    display: block;
+    position: static;
+    margin: 0 8px;
+    z-index: 2;
+    visibility: visible;
+  }
+}
+
+/* ACHIEVEMENTS */
+.blue-section.achievements {
+    position: relative;
+    background: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg') center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    overflow: hidden;
+    padding-left: var(--marginside);
+    padding-right: var(--marginside);
+    color: var(--color-white);
+}
+
+.blue-section > h2{
+  margin-bottom: 30px;
+}
+
+.blue-section.achievements::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-primary);
+    opacity: 0.75;
+    z-index: 1;
+}
+
+.blue-section.achievements > * {
+    position: relative;
+    z-index: 2;
+}
+
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .achievements-list {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+.achievement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-main {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+.achievement-desc {
+    color: var(--color-white);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
