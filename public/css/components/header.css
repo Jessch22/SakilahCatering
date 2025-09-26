@@ -1,0 +1,169 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4vw;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4da6ff;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Contact Button */
+.btn-hubungi {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-hubungi:hover {
+    background: #4da6ff;
+    color: #fff;
+}
+
+
+/* default: sembunyikan hamburger di layar besar */
+.hamburger {
+  display: none;
+}
+
+/* responsive */
+@media (max-width: 844px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: var(--color-white);
+    user-select: none;
+  }
+
+  .contact-btn {
+    display: none; /* biasanya disembunyikan biar tidak numpuk */
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 16px;
+  }
+
+  /* di mobile, hover dinonaktifkan */
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  /* hanya muncul saat ada class .open dari JS */
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a{
+    color: var(--color-white);
+  }
+
+      .dropdown.open > a::after {
+    content: "▾"; /* panah bawah kalau open */
+    margin-left: 6px;
+  }
+
+  .dropdown > a::after {
+    content: "▸"; /* panah kanan default */
+    margin-left: 6px;
+  }
+}
