@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="{{ asset('css/font.css')}}">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/fontawesome-free-7.0.1-web/css/all.min.css') }}">
   @stack('styles')
 </head>
 <body>
