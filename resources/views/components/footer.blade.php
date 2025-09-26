@@ -4,9 +4,9 @@
         <div class="footer-section">
             <h1>SAKILAH CATERING</h1>
             <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/sakilahcatering" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sakilahcatering" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
 
