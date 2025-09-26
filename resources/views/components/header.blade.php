@@ -11,6 +11,7 @@
             <li class="dropdown">
                 <a>Tentang Kami</a>
                 <ul class="dropdown-menu">
+                    <li><a href="{{ url('/about-us') }}">Tentang Sakilah</a></li>
                     <li><a href="{{ url('/visi-misi') }}">Visi & Misi</a></li>
                     <li><a href="{{ url('/sejarah') }}">Sejarah</a></li>
                 </ul>
