@@ -18,7 +18,7 @@
   <div class="hero-content">
     <h1 class="hero-title">Sakilah Catering</h1>
     <div class="hero-slogan">-SLOGAN-</div>
-    <a href="#" class="hero-btn">Pesan Sekarang</a>
+    <a href="/menu" class="hero-btn">Pesan Sekarang</a>
   </div>
 </div>
 @endsection
@@ -36,7 +36,7 @@
     <div class="about-us-keterangan">
       <p class="about-us-isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-      <a href="#" class="about-us-btn">Selengkapnya</a>
+      <a href="/about-us" class="about-us-btn">Selengkapnya</a>
     </div>
   </div>
 </div>
