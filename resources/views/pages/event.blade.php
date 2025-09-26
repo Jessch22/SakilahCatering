@@ -12,7 +12,7 @@
 @section('content')
 
 <div class="event-container">
-    @for ($i = 1; $i <= 14; $i++)
+    @for ($i = 1; $i <= 9; $i++)
         <x-event-card />
     @endfor
 </div>
