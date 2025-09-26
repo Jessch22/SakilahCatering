@@ -21,7 +21,7 @@
             <li><a href="{{ url('/menu') }}">Menu</a></li>
         </ul>
         <div class="contact-btn">
-            <a href="{{ url('/kontak') }}" class="btn-hubungi">Hubungi Kami</a>
+            <a href="{{ url('/contact') }}" class="btn-hubungi">Hubungi Kami</a>
         </div>
 
         <div class="hamburger" id="hamburger">
