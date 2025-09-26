@@ -261,7 +261,7 @@
     color: var(--color-white);
 }
 
-.blue-section h2{
+.blue-section > h2{
   margin-bottom: 30px;
 }
 
