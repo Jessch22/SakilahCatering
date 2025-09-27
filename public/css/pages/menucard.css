@@ -6,19 +6,17 @@
     padding: 2rem;
 }
 
-/* Styling tambahan untuk scrollbar agar lebih bagus (opsional) */
 .card-container::-webkit-scrollbar {
-    height: 8px;
+    height: 5px; 
 }
 .card-container::-webkit-scrollbar-thumb {
     background: var(--color-bg);
-    border-radius: 10px;
+    border-radius: 7px; 
 }
 .card-container::-webkit-scrollbar-thumb:hover {
     background: var(--color-grey);
 }
 
-/* Wadah utama kartu menu */
 .menu-card {
     background-color: var(--color-white);
     border-radius: 13px; 
@@ -35,7 +33,7 @@
 
 /* Sisa CSS lainnya tetap sama */
 .menu-card-image, .menu-card-image-2 {
-    height: 220px;
+    height: 200px; 
     width: 100%;
 }
 .menu-card-image {
@@ -45,13 +43,13 @@
     background-color: var(--color-grey);
 }
 .menu-card-content {
-    padding: 24px;
+    padding: 24px; 
 }
 
 .menu-title {
     margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 24px;
+    margin-bottom: 9px; 
+    font-size: 21px; 
     font-weight: 700;
     color: var(--color-black);
 }
@@ -78,23 +76,23 @@
     text-align: center;
 }
 .cta-info {
-    font-size: 10px;
+    font-size: 7px; 
     color: var(--color-grey);
     letter-spacing: 0.5px;
-    margin-bottom: 8px;
+    margin-bottom: 5px; 
     font-weight: 400;
 }
 .cta-button {
     display: inline-block;
     background-color: var(--color-accent);
     color: var(--color-black);
-    font-size: 18px;
+    font-size: 15px; 
     font-weight: 700;
-    padding: 14px 32px;
+    padding: 11px 29px; 
     border: none;
-    border-radius: 50px;
+    border-radius: 47px; 
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.15); 
     transition: all 0.3s ease;
 }
 .cta-button:hover {
