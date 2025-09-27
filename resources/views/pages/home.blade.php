@@ -55,28 +55,34 @@
   </div>
 </div>
 
-<div class="white-section">
+<div class="white-section service-section">
   <div class="title-white-section">
     <h2>Layanan Kami</h2>
     <p class="accent-content"></p>
   </div>
-  <div class="card-hover-container">
-      @for ($i = 1; $i <= 4; $i++)
-          <x-card-hover />
-      @endfor
-  </div>
+  <div class="card-hover-wrapper">
+    <div class="card-hover-container service-container">
+        @for ($i = 1; $i <= 4; $i++)
+            <x-card-hover />
+        @endfor
+    </div>
+    <div class="scroll-dots"></div>
+    </div>
 </div>
 
-<div class="white-section">
+<div class="white-section menu-section">
   <div class="title-white-section">
     <h2>Menu Kami</h2>
     <p class="accent-content"></p>
   </div>
-  <div class="card-hover-container">
-      @for ($i = 1; $i <= 3; $i++)
-          <x-card-hover />
-      @endfor
-  </div>
+  <div class="card-hover-wrapper">
+    <div class="card-hover-container menu-container">
+        @for ($i = 1; $i <= 3; $i++)
+            <x-card-hover />
+        @endfor
+    </div>
+    <div class="scroll-dots"></div>
+    </div>
 </div>
 
 <div class="blue-section testi">
@@ -121,4 +127,5 @@
 
 @push('scripts')
 <script src="{{ asset('js/components/testicard-scroll.js')}}"></script>
+<script src="{{ asset('js/components/dot.js')}}"></script>
 @endpush

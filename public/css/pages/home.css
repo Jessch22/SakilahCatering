@@ -160,7 +160,7 @@
 }
 
 /* MENU PAKET */
-.card-hover-container{
+.menu-container, .service-container{
   display: flex;
   flex-direction: row;
   gap: 4vw;
@@ -168,7 +168,40 @@
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   scrollbar-width: none;
-  margin: 0 0 56px 0;
+  scroll-snap-type: x mandatory;
+  /* margin: 0 0 56px 0; */
+}
+
+.menu-container::-webkit-scrollbar, .service-container::-webkit-scrollbar { 
+  display: none; 
+}
+
+.card-hover {
+  scroll-snap-align: start;
+}
+
+.scroll-dots{
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.scroll-dots span{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  transition: background 0.3s;
+}
+.scroll-dots span.active{
+  background: var(--color-primary);
+}
+
+@media (max-width: 560px){
+  .scroll-dots{
+    display: flex;
+  }
 }
 
 /* TESTIMONI */
