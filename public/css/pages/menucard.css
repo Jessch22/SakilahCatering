@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Pengaturan dasar untuk halaman */
 body {
     background-color: var(--color-bg);
@@ -5,6 +6,8 @@ body {
     margin: 0;
 }
 
+=======
+>>>>>>> Stashed changes
 .card-container {
     display: flex;
     overflow-x: auto; 
@@ -28,16 +31,27 @@ body {
 /* Wadah utama kartu menu */
 .menu-card {
     background-color: var(--color-white);
+<<<<<<< Updated upstream
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     width: 360px;
     flex-shrink: 0; /* INI KUNCINYA: Mencegah kartu penyusutan */
+=======
+    border-radius: 13px; 
+    box-shadow: 0 5px 21px rgba(0, 0, 0, 0.1); 
+    width: 350px; 
+    flex-shrink: 0;
+>>>>>>> Stashed changes
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .menu-card:hover {
+<<<<<<< Updated upstream
     transform: translateY(-5px);
+=======
+    transform: translateY(-3px); 
+>>>>>>> Stashed changes
 }
 
 /* Sisa CSS lainnya tetap sama */
@@ -49,25 +63,46 @@ body {
     background-color: var(--color-black);
 }
 .menu-card-image-2 {
-    background-color: #4a4a4a;
+    background-color: var(--color-grey);
 }
 .menu-card-content {
     padding: 24px;
 }
+
 .menu-title {
     margin-top: 0;
     margin-bottom: 12px;
     font-size: 24px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--color-black);
 }
+
 .menu-items {
+<<<<<<< Updated upstream
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-grey);
     margin-bottom: 24px;
     min-height: 75px;
+=======
+    font-size: 13px; 
+    line-height: 1.5;
+    color: var(--color-grey);
+    margin-bottom: 23px; 
+    padding: 0;
+    min-height: 72px; 
+>>>>>>> Stashed changes
 }
+
+.menu-card-content ul li{
+    list-style-type: none;
+    border-bottom: 2px solid var(--color-bg);
+}
+
+.menu-card-content ul li:last-child{
+    border-bottom: 0px;
+}
+
 .cta-container {
     text-align: center;
 }
@@ -93,6 +128,20 @@ body {
 }
 .cta-button:hover {
     background-color: var(--color-accent);
+<<<<<<< Updated upstream
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
+=======
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px); 
+}
+
+@media(max-width: 700px){
+    .menu-card{
+        width:240px;
+    }
+    .card-container{
+        padding: 0;
+    }
+>>>>>>> Stashed changes
 }
