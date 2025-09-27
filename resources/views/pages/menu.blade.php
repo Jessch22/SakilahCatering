@@ -23,11 +23,6 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">MENU A</h2>
-<<<<<<< Updated upstream
-            <p class="menu-items">
-                Nasi Putih | Pilihan Sop | Pilihan Ayam | Menu Pelengkap | Kerupuk Udang | Air Mineral | Buah Potong
-            </p>
-=======
             <ul class="menu-items">
                 <li>Nasi Putih</li>
                 <li>Pilihan Sop</li>
@@ -37,7 +32,6 @@
                 <li>Air Mineral</li>
                 <li>Buah Potong</li>
             </ul>
->>>>>>> Stashed changes
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
@@ -49,11 +43,6 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">MENU B</h2>
-<<<<<<< Updated upstream
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | Acar | Kerupuk Bawang | Es Teh Manis | Puding Coklat
-            </p>
-=======
             <ul class="menu-items">
                 <li>Nasi Putih</li>
                 <li>Pilihan Sop</li>
@@ -63,7 +52,6 @@
                 <li>Air Mineral</li>
                 <li>Buah Potong</li>
             </ul>
->>>>>>> Stashed changes
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
@@ -75,13 +63,6 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">MENU C</h2>
-<<<<<<< Updated upstream
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-=======
             <ul class="menu-items">
                 <li>Nasi Putih</li>
                 <li>Pilihan Sop</li>
@@ -92,7 +73,6 @@
                 <li>Air Mineral</li>
                 <li>Buah Potong</li>
             </ul>
->>>>>>> Stashed changes
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
@@ -104,13 +84,6 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">MENU D</h2>
-<<<<<<< Updated upstream
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-=======
             <ul class="menu-items">
                 <li>Nasi Putih</li>
                 <li>Pilihan Sop</li>
@@ -123,7 +96,6 @@
                 <li>Puding + Vla</li>
                 <li>Softdrink</li>
             </ul>
->>>>>>> Stashed changes
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
@@ -135,14 +107,6 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">MENU E</h2>
-<<<<<<< Updated upstream
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-            <div class="cta-container">
-=======
             <ul class="menu-items">
                 <li>Nasi Putih</li>
                 <li>Nasi Goreng</li>
@@ -156,7 +120,6 @@
                 <li>Softdrink</li>
             </ul>
                 <div class="cta-container">
->>>>>>> Stashed changes
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
             </div>
@@ -167,13 +130,6 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">MENU LENGKAP</h2>
-<<<<<<< Updated upstream
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-=======
             <ul class="menu-items">
                 <li>Nasi Putih</li>
                 <li>Nasi Goreng</li>
@@ -189,7 +145,6 @@
                 <li>Mini Cake</li>
                 <li>Softdrink</li>
             </ul>
->>>>>>> Stashed changes
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
