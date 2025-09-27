@@ -126,7 +126,7 @@
 @endsection
 
 @push('scripts')
-<script src="{{ asset('js/components/testicard-scroll.js')}}"></script>
-<script src="{{ asset('js/components/dot.js')}}"></script>
-<script src="{{ asset('js/components/cardhover.js')}}"></script>
+  <script src="{{ asset('js/components/testicard-scroll.js')}}"></script>
+  <script src="{{ asset('js/components/dot.js')}}"></script>
+  <script src="{{ asset('js/components/cardhover.js')}}"></script>
 @endpush
