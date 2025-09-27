@@ -17,7 +17,7 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title">Sakilah Catering</h1>
-    <div class="hero-slogan">-SLOGAN-</div>
+    <div class="hero-slogan">Wedding Organizer & Catering Service</div>
     <a href="/menu" class="hero-btn">Pesan Sekarang</a>
   </div>
 </div>
@@ -57,7 +57,7 @@
 
 <div class="white-section service-section">
   <div class="title-white-section">
-    <h2>Layanan Kami</h2>
+    <h2>Paket Kami</h2>
     <p class="accent-content"></p>
   </div>
   <div class="card-hover-wrapper">
@@ -100,7 +100,7 @@
 
 <div class="white-section">
   <div class="title-white-section">
-    <h2>Klien Kami</h2>
+    <h2>Acara Terdahulu</h2>
     <p class="accent-content"></p>
   </div>
   <x-logo-marquee />
@@ -109,17 +109,17 @@
 <div class="blue-section achievements">
   <h2>Our Achievements</h2>
   <div class="achievements-list">
+      <div class="achievement-item">
+        <span class="achievement-main">3</span>
+        <span class="achievement-desc">Years of Experience</span>
+    </div>
     <div class="achievement-item">
         <span class="achievement-main">100+</span>
-        <span class="achievement-desc">events</span>
+        <span class="achievement-desc">Events Served</span>
     </div>
     <div class="achievement-item">
-        <span class="achievement-main">10+</span>
-        <span class="achievement-desc">year(s) experience</span>
-    </div>
-    <div class="achievement-item">
-        <span class="achievement-main">250+</span>
-        <span class="achievement-desc">customer(s)</span>
+        <span class="achievement-main">20+</span>
+        <span class="achievement-desc">Catering Packages</span>
     </div>
   </div>
 </div>

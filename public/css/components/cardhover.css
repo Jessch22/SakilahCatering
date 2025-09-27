@@ -72,3 +72,27 @@
   margin-top: 16px;
   pointer-events: auto;
 }
+
+@media (max-width: 560px){
+  .card-content{
+    background: linear-gradient(to top, var(--color-primary) 30%, transparent 100%);
+    padding-bottom: 40px;
+  }
+
+  .card-title {
+  margin-bottom: 0;
+  }
+
+  .card-desc {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 8px;
+  }
+
+  .card-btn {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 16px;
+    pointer-events: auto;
+  }
+}
