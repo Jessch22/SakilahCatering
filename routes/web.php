@@ -10,6 +10,6 @@ Route::get('/menu', function () {
     return view('pages.menu');
 });
 
-Route::get('/service', function () {
+Route::get('/layanan', function () {
     return view('pages.service');
 });

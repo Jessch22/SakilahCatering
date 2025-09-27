@@ -23,6 +23,15 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">PAKET WEITERS A</h2>
+            <ul class="menu-items">
+                <li>Nasi</li>
+                <li>Ayam</li>
+                <li>Daging</li>
+                <li>Tumisan</li>
+                <li>Kerupuk</li>
+                <li>Air Minum</li>
+                <li>Buah</li>
+            </ul>
             <p class="menu-items">
                 Nasi Putih | Pilihan Sop | Pilihan Ayam | 
                 Menu Pelengkap | Kerupuk Udang | Air Mineral | 

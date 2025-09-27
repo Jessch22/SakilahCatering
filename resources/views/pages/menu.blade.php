@@ -14,7 +14,7 @@
 @section('title-hero', 'Menu Kami') 
 
 @section('content')
-<div class="menu-container">
+<div class="ricebox-container">
     <h2 class="title-text">Buffet</h2>
 </div>
 
@@ -182,14 +182,14 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">PAKET B</h2>
-            <p class="menu-items">
-            Nasi <br>
-            Daging <br>
-            Tumisan <br>
-            Kerupuk <br>
-            Air Minum <br>
-            Buah 
-            </p>
+            <ul class="menu-items">
+                <li>Nasi</li>
+                <li>Daging</li>
+                <li>Tumisan</li>
+                <li>Kerupuk</li>
+                <li>Air Minum</li>
+                <li>Buah</li>
+            </ul>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
@@ -201,15 +201,15 @@
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
             <h2 class="menu-title">PAKET C</h2>
-            <p class="menu-items">
-                Nasi <br>
-                Ayam <br>
-                Daging <br>
-                Tumisan <br>
-                Kerupuk <br>
-                Air Minum <br>
-                Buah
-            </p>
+            <ul class="menu-items">
+                <li>Nasi</li>
+                <li>Ayam</li>
+                <li>Daging</li>
+                <li>Tumisan</li>
+                <li>Kerupuk</li>
+                <li>Air Minum</li>
+                <li>Buah</li>
+            </ul>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
                 <a href="#" class="cta-button">Pesan Sekarang</a>
@@ -224,81 +224,27 @@
 </div>
 
 <div class="card-container">
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">GABUNGAN A</h2>
-            <p class="menu-items">
-                Nasi Putih | Pilihan Sop | Pilihan Ayam | Menu Pelengkap | Kerupuk Udang | Air Mineral | Buah Potong
-            </p>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
+    <section class="gubugan-section">
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li>Bakwan Malang</li>
+                <li>Mie Bakso</li>
+                <li>Solo Betawi</li>
+                <li>Sate Padang</li>
+                <li>Kambing Guling</li>
+                <li>Dimsum</li>
+            </ul>
 
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">GABUNGAN B</h2>
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | Acar | Kerupuk Bawang | Es Teh Manis | Puding Coklat
-            </p>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
+            <ul class="menu-list">
+                <li>Siomay</li>
+                <li>Nasi Gudeg</li>
+                <li>Es Dawet</li>
+                <li>Es Doger</li>
+                <li>Ice Cream Waffle</li>
+                <li>dll...</li>
+            </ul>
         </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">GABUNGAN C</h2>
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">GABUNGAN D</h2>
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">GABUNGAN E</h2>
-            <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
-            </p>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
+    </section>
 
 </div>
 
