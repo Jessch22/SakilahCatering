@@ -1,0 +1,63 @@
+/* Kontainer Utama */
+.vm-container {
+    font-family: 'Poppins', sans-serif; /* Font dipindahkan ke sini */
+    color: #4A5568; /* Warna teks default dipindahkan ke sini */
+    background-color: #F0F5FF; /* Warna latar belakang biru sangat muda */
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 40px 50px;
+    max-width: 800px;
+    /* Lebar bisa disesuaikan, margin: auto; untuk membuatnya di tengah jika diperlukan */
+    margin: 40px auto; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Judul (Visi & Misi) */
+.vm-title {
+    color: #3B82F6; /* Warna biru untuk judul */
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* Judul "Misi" diberi jarak atas tambahan */
+.misi-title {
+    margin-top: 50px;
+}
+
+/* Teks paragraf untuk Visi */
+.vm-text {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Daftar Misi */
+.mission-list {
+    margin-top: 30px;
+}
+
+.mission-item {
+    display: flex;
+    align-items: flex-start; /* Agar nomor sejajar dengan awal teks */
+    margin-bottom: 25px;
+}
+
+/* Nomor Misi */
+.mission-number {
+    color: #3B82F6; /* Warna biru sama dengan judul */
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 25px;
+}
+
+/* Teks pada setiap item Misi */
+.mission-item p {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 10px; /* Sedikit padding agar sejajar dengan nomor */
+}

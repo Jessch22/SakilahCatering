@@ -13,3 +13,7 @@ Route::get('/menu', function () {
 Route::get('/layanan', function () {
     return view('pages.service');
 });
+
+Route::get('/visimisi', function () {
+    return view('pages.visimisi');
+});
