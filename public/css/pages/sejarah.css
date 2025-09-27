@@ -1,0 +1,107 @@
+/* Mengatur font dasar untuk seluruh komponen */
+.sejarah-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 950px; /* Lebar maksimum dari seluruh bagian */
+    margin: 50px auto; /* Memberi jarak atas/bawah dan menengahkan section */
+    padding: 20px;
+}
+
+/* Styling untuk judul "Sejarah" */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem; /* Ukuran font yang besar dan jelas */
+    color: #2a6fdb; /* Warna biru yang elegan */
+    margin-bottom: 30px; /* Jarak dari judul ke galeri gambar */
+}
+
+/* Kontainer yang membungkus galeri gambar dan tombol panah */
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Menyelaraskan panah dan gambar secara vertikal */
+    margin-bottom: 25px; /* Jarak dari galeri ke kotak teks */
+}
+
+/* Wrapper yang menampung gambar-gambar */
+.gallery-wrapper {
+    display: flex; /* Membuat gambar berjajar ke samping */
+    gap: 20px; /* Jarak antar gambar */
+    width: 100%;
+    overflow: hidden; /* Penting jika ingin membuat slider sungguhan */
+}
+
+/* Styling untuk setiap item gambar */
+.gallery-item {
+    flex: 0 0 calc(50% - 10px); /* Setiap gambar mengambil setengah lebar dikurangi setengah gap */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Sudut gambar sedikit melengkung */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+/* Style untuk gambar yang sedang aktif/terlihat di kiri */
+.gallery-item.gambar-aktif img {
+    border: 4px solid #2a6fdb; /* Border biru tebal */
+    box-shadow: 0 6px 20px rgba(42, 111, 219, 0.4); /* Bayangan biru yang lebih menonjol */
+    transform: scale(1.02); /* Sedikit memperbesar gambar aktif */
+    transition: all 0.3s ease; /* Transisi halus untuk semua perubahan */
+}
+
+/* Styling umum untuk tombol panah navigasi */
+.nav-arrow {
+    position: absolute; /* Diposisikan relatif terhadap 'gallery-container' */
+    top: 50%;
+    transform: translateY(-50%); /* Trik untuk menengahkan vertikal secara sempurna */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Membuat tombol menjadi bulat */
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.3s ease; /* Transisi halus saat hover */
+    z-index: 10;
+}
+
+.nav-arrow:hover {
+    background-color: #fff;
+    color: #2a6fdb;
+    transform: translateY(-50%) scale(1.1); /* Efek zoom saat disentuh mouse */
+}
+
+/* Posisi spesifik untuk panah kiri dan kanan */
+.left-arrow {
+    left: -25px;
+}
+
+.right-arrow {
+    right: -25px;
+}
+
+/* Kontainer untuk teks deskripsi */
+.text-container {
+    border: 1px solid #e0e0e0; /* Garis tepi yang lembut */
+    padding: 25px 30px; /* Padding internal (vertikal dan horizontal) */
+    border-radius: 8px; /* Sudut melengkung */
+}
+
+.text-container p {
+    margin: 0;
+    line-height: 1.7; /* Jarak antar baris agar mudah dibaca */
+    color: #555; /* Warna teks abu-abu gelap */
+    text-align: justify; /* Teks rata kiri-kanan */
+}
+
+/* Memberi jarak antara dua paragraf di dalam kotak */
+.text-container p:not(:last-child) {
+    margin-bottom: 16px;
+}

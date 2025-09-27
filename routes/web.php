@@ -17,3 +17,7 @@ Route::get('/layanan', function () {
 Route::get('/visimisi', function () {
     return view('pages.visimisi');
 });
+
+Route::get('/sejarah', function () {
+    return view('pages.sejarah');
+});
