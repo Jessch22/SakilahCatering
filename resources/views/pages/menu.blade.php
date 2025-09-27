@@ -24,7 +24,9 @@
         <div class="menu-card-content">
             <h2 class="menu-title">MENU A</h2>
             <p class="menu-items">
-                Nasi Putih | Pilihan Sop | Pilihan Ayam | Menu Pelengkap | Kerupuk Udang | Air Mineral | Buah Potong
+                Nasi Putih | Pilihan Sop | Pilihan Ayam | 
+                Menu Pelengkap | Kerupuk Udang | 
+                Air Mineral | Buah Potong
             </p>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
@@ -38,7 +40,9 @@
         <div class="menu-card-content">
             <h2 class="menu-title">MENU B</h2>
             <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | Acar | Kerupuk Bawang | Es Teh Manis | Puding Coklat
+                Nasi Putih | Pilihan Sop | Pilihan Daging / Ikan |
+                Menu Pelengkap | Kerupuk Udang | Air Mineral |
+                Buah Potong
             </p>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
@@ -52,9 +56,9 @@
         <div class="menu-card-content">
             <h2 class="menu-title">MENU C</h2>
             <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
+                Nasi Putih | Pilihan Sop | Pilihan Ayam | 
+                Olahan Daging / Ikan | Menu Pelengkap | Kerupuk Udang | 
+                Air Mineral | Buah Potong
             </p>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
@@ -68,9 +72,9 @@
         <div class="menu-card-content">
             <h2 class="menu-title">MENU D</h2>
             <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
+                Nasi Putih | Pilihan Sop | Pilihan Ayam | 
+                Olahan Daging / Ikan | Menu Pelengkap | Kerupuk Udang | 
+                Air Mineral | Buah Potong | Puding + Vla | Softdrink
             </p>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
@@ -84,9 +88,9 @@
         <div class="menu-card-content">
             <h2 class="menu-title">MENU E</h2>
             <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
+                Nasi Putih | Nasi Goreng | Pilihan Sop | Pilihan Ayam | 
+                Olahan Daging / Ikan | Menu Pelengkap | Kerupuk Udang | 
+                Air Mineral | Buah Potong | Softdrink
             </p>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
@@ -100,9 +104,10 @@
         <div class="menu-card-content">
             <h2 class="menu-title">MENU LENGKAP</h2>
             <p class="menu-items">
-                Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
-                Acar | Kerupuk Bawang | Es Teh Manis | 
-                Puding Coklat
+                Nasi Putih | Nasi Goreng | Pilihan Sop | Pilihan Ayam | 
+                Olahan Daging | Olahan Ikan | Menu Pelengkap | 
+                Kerupuk Udang | Air Mineral | Buah Potong | 
+                Puding + Vla | Mini Cake | Softdrink
             </p>
             <div class="cta-container">
                 <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>

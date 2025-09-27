@@ -1,0 +1,29 @@
+.weiters-container {
+    background-color: var(--color-accent); 
+    width: 190px;
+    text-align: center;
+    margin: 16px
+}
+
+.weiters-container {
+    background-color: var(--color-accent); 
+    text-align: center;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px var(--color-black); 
+
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+@media (max-width: 600px) {
+    .weiters-container {
+    flex-basis: 100%; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .weiters-container {
+    flex-basis: calc(50% - 32px);
+    }
+}
