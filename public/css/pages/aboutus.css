@@ -30,7 +30,7 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 752px) {
+@media (max-width: 900px) {
   .about-us-content{
     display: block;
   }
