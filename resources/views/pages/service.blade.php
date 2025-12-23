@@ -1,28 +1,34 @@
 @extends('layouts.app')
 
-@section('title', 'Service Kami')
+@section('title', 'Layanan Kami')
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/pages/service.css')}}">
+<link rel="stylesheet" href="{{ asset('css/pages/home.css')}}">
+
 <link rel="stylesheet" href="{{ asset('css/pages/menucard.css')}}">
 <link rel="stylesheet" href="{{ asset('css/components/eventcard.css')}}">
-<link rel="stylesheet" href="{{ asset('css/components/logomarquee.css')}}">
 @endpush
 
-<!-- cuma ganti nama -->
-<!-- title hero ambil dari app.blade -->
 @section('title-hero', 'Layanan Kami') 
 
 @section('content')
-<div class="weiters-container">
-    <h1 class="title-text">WEITERS</h1>
-</div>
+<h1 class="title-text">Paket Catering</h1>
+<p class="accent-content"></p>
+
+
+<h1 class="title-text">Paket All-In Wedding</h1>
+<p class="accent-content"></p>
+
+
+
+
 
 <div class="card-container">
     <div class="menu-card">
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
-            <h2 class="menu-title">PAKET WEITERS A</h2>
+            <h2 class="menu-title">PAKET WAITERS A</h2>
             <p class="menu-items">
                 Nasi Putih | Pilihan Sop | Pilihan Ayam | 
                 Menu Pelengkap | Kerupuk Udang | Air Mineral | 
@@ -38,7 +44,7 @@
     <div class="menu-card">
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
-            <h2 class="menu-title">PAKET WEITERS B</h2>
+            <h2 class="menu-title">PAKET WAITERS B</h2>
             <p class="menu-items">
                 Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
                 Acar | Kerupuk Bawang | Es Teh Manis | 
@@ -54,7 +60,7 @@
     <div class="menu-card">
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
-            <h2 class="menu-title">PAKET WEITERS C</h2>
+            <h2 class="menu-title">PAKET WAITERS C</h2>
             <p class="menu-items">
                 Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
                 Acar | Kerupuk Bawang | Es Teh Manis | 
@@ -70,7 +76,7 @@
     <div class="menu-card">
         <div class="menu-card-image"></div>
         <div class="menu-card-content">
-            <h2 class="menu-title">PAKET WEITERS D</h2>
+            <h2 class="menu-title">PAKET WAITERS D</h2>
             <p class="menu-items">
                 Nasi Goreng | Telur Mata Sapi | Sate Ayam | 
                 Acar | Kerupuk Bawang | Es Teh Manis | 
