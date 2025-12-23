@@ -1,6 +1,6 @@
 @extends('layouts.homeapp')
 
-@section('title', 'Event Kami')
+@section('title', 'Beranda')
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/pages/home.css')}}">
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 @endpush
 
-@section('title-hero', 'Event Kami')
+@section('title-hero', 'Beranda')
 
 @section('hero-home')
 <div class="hero-banner">
@@ -18,7 +18,7 @@
   <div class="hero-content">
     <h1 class="hero-title">Sakilah Catering</h1>
     <div class="hero-slogan">Wedding Organizer & Catering Service</div>
-    <a href="/menu" class="hero-btn">Pesan Sekarang</a>
+    <a href="https://wa.me/+6285183098884" class="hero-btn">Pesan Sekarang</a>
   </div>
 </div>
 @endsection
@@ -32,26 +32,45 @@
     <p class="accent-content"></p>
   </div>
   <div class="about-us-content">
-    <img class="about-us-image" src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="">
+    <img class="about-us-image" src="{{ asset('img/asset/IMG-20250927-WA0054.jpg') }}" alt="">
     <div class="about-us-keterangan">
-      <p class="about-us-isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-      <a href="/about-us" class="about-us-btn">Selengkapnya</a>
+        <div class="about-us-isi">
+          <p>
+              <strong>Sakilah Catering</strong>, di bawah naungan CV. Sakilah Cahaya Kharisma, hadir sebagai mitra layanan catering dan event organizer profesional yang berbasis di Jati Asih, Bekasi.
+          </p>
+
+          <p>
+          Sakilah melayani seluruh wilayah Jabodetabek dengan tawaran paket beragam:
+          </p>
+          <ul>
+              <li>
+                <strong>Paket Catering Hemat:</strong> Mulai Rp28.000/porsi (Sudah termasuk alat & waiters)
+              </li>
+              <li>
+                <strong>All-In Wedding Package:</strong> Mulai Rp60 Juta (Lengkap dengan Venue, Dekorasi, & WO)
+              </li>
+          </ul>
+          <br>
+      </div>
+      <a href="{{ url('/aboutus') }}" class="about-us-btn">Selengkapnya</a>
     </div>
   </div>
 </div>
 
-
-<div class="blue-section company-profile">
-  <h2 class="center">Company Profile</h2>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0&autoplay=1&loop=1&playlist=D0UnqGm_miA&modestbranding=1&rel=0" 
-      title="YouTube video player" 
-      allow="autoplay; encrypted-media" 
-      referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen>
-    </iframe>
+<div class="blue-section cp">
+  <h2 class="center">Portofolio Catering</h2>
+  <div class="cp-wrapper">
+    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="cp-container">
+      <img src="{{ asset('img/asset/IMG-20250927-WA0055.jpg') }}">
+      <img src="{{ asset('img/asset/IMG-20250927-WA0094.jpg') }}">
+      <img src="{{ asset('img/asset/IMG-20250927-WA0090.jpg') }}">
+    </div>
+    <button class="next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  
+  <div class="center" style="margin-top: 40px;">
+    <a href="{{ url('/event') }}" class="btn-gallery">Lihat Galeri Lainnya</a>
   </div>
 </div>
 
@@ -87,20 +106,22 @@
 
 <div class="blue-section testi">
   <h2 class="center">Testimoni</h2>
-  <div class="testi-wrapper">
-    <button class="prev"><i class="fas fa-chevron-left"></i></button>
-    <div class="testi-container">
-      @for ($i = 1; $i <= 3; $i++)
-          <x-testi-card class="testi-card"/>
-      @endfor
+  <div class="video-container">
+    <div class="instagram-wrapper">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DSRGrhZATRR/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+      </blockquote>
     </div>
-    <button class="next"><i class="fas fa-chevron-right"></i></button>
+
+    <div class="instagram-wrapper">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DR32x8lgcTC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+      </blockquote>
+    </div>
   </div>
 </div>
 
 <div class="white-section">
   <div class="title-white-section">
-    <h2>Acara Terdahulu</h2>
+    <h2>Supported Event</h2>
     <p class="accent-content"></p>
   </div>
   <x-logo-marquee />
@@ -108,18 +129,19 @@
 
 <div class="blue-section achievements">
   <h2>Our Achievements</h2>
+  <br>
   <div class="achievements-list">
       <div class="achievement-item">
-        <span class="achievement-main">3</span>
-        <span class="achievement-desc">Years of Experience</span>
+        <span class="achievement-main">2</span>
+        <span class="achievement-desc">Tahun Pengalaman</span>
     </div>
     <div class="achievement-item">
         <span class="achievement-main">100+</span>
-        <span class="achievement-desc">Events Served</span>
+        <span class="achievement-desc">Acara Dilayani</span>
     </div>
     <div class="achievement-item">
-        <span class="achievement-main">20+</span>
-        <span class="achievement-desc">Catering Packages</span>
+        <span class="achievement-main">100%</span>
+        <span class="achievement-desc">Halal & Higienis</span>
     </div>
   </div>
 </div>
@@ -129,4 +151,5 @@
   <script src="{{ asset('js/components/testicard-scroll.js')}}"></script>
   <script src="{{ asset('js/components/dot.js')}}"></script>
   <script src="{{ asset('js/components/cardhover.js')}}"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
 @endpush

@@ -36,11 +36,25 @@
   width: 100%;
   min-height: 430px;
   height: 100vh;
-  background: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg') center center/cover no-repeat;
+  background: url('../../img/asset/hero-banner.png')  center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-position: center 15%; */
   overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-banner > * {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-overlay {
@@ -129,34 +143,13 @@
   font-weight: 600;
 }
 
-@media (max-width: 752px) {
+@media (max-width: 880px) {
   .about-us-content{
     display: block;
   }
   .about-us-image{
     height: 68vw;
   }
-}
-
-/* COMPANY PROFILE */
-.video-container {
-  position: relative;
-  width: 80vw;
-  max-width: 800px;  
-  margin: 40px auto;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 /* MENU PAKET */
@@ -203,42 +196,21 @@
   }
 }
 
-/* TESTIMONI */
-.testi-wrapper {
+/* GALERI */
+.cp-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.testi-container {
+.cp-container {
   display: flex;
   justify-content: space-between;
   margin: 56px var(--marginside);
   transition: all 0.3s;
 }
 
-.prev, .next {
-  display: none;
-  background: var(--color-white);
-  border: none;
-  font-size: 1.5rem; /* ukuran icon */
-  width: 48px;       /* lebar sama tinggi */
-  height: 48px;
-  cursor: pointer;
-  border-radius: 50%;  /* bikin bulat */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.13);
-  transition: background 0.2s;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* biar icon pas di tengah */
-  visibility: hidden;
-}
-
-.prev:active, .next:active {
-  background: var(--color-white);
-}
-
-.testi-container {
+.cp-container {
   display: flex;
   justify-content: space-between;
   margin: 56px var(--marginside);
@@ -247,18 +219,63 @@
   max-width: 1200px;
 }
 
-/* RESPONSIVE (mobile) */
+.cp-container>img{
+  width: 30%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  min-width: 300px;
+}
+
+.prev, .next {
+  display: none;
+  background: var(--color-white);
+  border: none;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.13);
+  transition: background 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.prev:active, .next:active {
+  background: var(--color-white);
+}
+
+.btn-gallery {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  padding: 10px 24px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-gallery:hover {
+  transform: scale(1.05);
+  background-color: var(--color-white);
+}
+
 @media (max-width: 900px) {
-  .testi-wrapper {
+  .cp-wrapper {
     justify-content: center;
     align-items: center;
-    padding: 0 12px; /* Biar tombol tidak terlalu pinggir */
+    padding: 0 12px;
     gap: 0;
   }
-  .testi-container {
+  .cp-container {
     overflow: hidden;
-    width: 90vw;     /* Supaya ikut lebar layar, tidak lebih dari viewport */
-    max-width: 350px; /* Batas maksimal biar tetap proporsional */
+    width: 90vw;
+    max-width: 350px;
     margin: 32px 0;
     display: flex;
     transition: opacity 0.3s ease;
@@ -271,12 +288,53 @@
     z-index: 2;
     visibility: visible;
   }
+
+  .btn-gallery {
+    margin-bottom: 20px;
+  }
+}
+
+/* TESTIMONI */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.instagram-wrapper {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: rgb(98, 66, 66);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.instagram-media {
+    margin: 0 !important;
+    width: 100% !important;
+    min-width: unset !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 900px) {  
+  .instagram-wrapper {
+      width: 40%;
+      max-width: 100%;
+  }
 }
 
 /* ACHIEVEMENTS */
 .blue-section.achievements {
     position: relative;
-    background: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg') center center/cover no-repeat;
+    background: url('../../img/asset/hero-banner.png') center center/cover no-repeat;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
