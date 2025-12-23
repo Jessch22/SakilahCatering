@@ -81,24 +81,23 @@
   </div>
   <div class="card-hover-wrapper">
     <div class="card-hover-container service-container">
-        @for ($i = 1; $i <= 4; $i++)
-            <x-card-hover />
-        @endfor
-    </div>
-    <div class="scroll-dots"></div>
-    </div>
-</div>
+      
+      <div class="card-hover" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg');">
+        <div class="card-content">
+          <div class="card-title">PAKET CATERING ONLY</div>
+          <div class="card-desc">Mulai dari Rp28.000/pax!</div>
+          <a href="#" class="card-btn">Tanya Selengkapnya</a>
+        </div>
+      </div>
 
-<div class="white-section menu-section">
-  <div class="title-white-section">
-    <h2>Menu Kami</h2>
-    <p class="accent-content"></p>
-  </div>
-  <div class="card-hover-wrapper">
-    <div class="card-hover-container menu-container">
-        @for ($i = 1; $i <= 3; $i++)
-            <x-card-hover />
-        @endfor
+      <div class="card-hover" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg');">
+        <div class="card-content">
+          <div class="card-title">PAKET ALL-IN WEDDING</div>
+          <div class="card-desc">Mulai dari Rp60juta!</div>
+          <a href="#" class="card-btn">Tanya Selengkapnya</a>
+        </div>
+      </div>
+
     </div>
     <div class="scroll-dots"></div>
     </div>
