@@ -52,7 +52,7 @@
           </ul>
           <br>
       </div>
-      <a href="{{ url('/aboutus') }}" class="about-us-btn">Selengkapnya</a>
+      <a href="{{ url('/about-us') }}" class="about-us-btn">Selengkapnya</a>
     </div>
   </div>
 </div>
