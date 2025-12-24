@@ -11,10 +11,10 @@
 
 @section('content')
 
-
+<!-- PETA -->
 <div class="iframe-container">
   <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63455.19093671056!2d106.91196857910157!3d-6.270380600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d007d056607%3A0x87255faeb2c27b34!2sSakilah%20Catering!5e0!3m2!1sid!2sid!4v1758823367104!5m2!1sid!2sid"
+    src="{{ $contact['map_link'] }}"
     style="border:0;"
     allowfullscreen=""
     loading="lazy"
@@ -23,19 +23,38 @@
   ></iframe>
 </div>
 
+<!-- INFO CONTACT -->
 <div class="contact-info">
+  
+  <!-- ALAMAT -->
   <div class="contact-row">
     <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-    <span class="contact-text">Jl. KH. Moh.Seman No. 8B, Jatikramat, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17421</span>
+    <span class="contact-text">{{ $contact['address'] }}</span>
   </div>
+
+  <!-- WHATSAPP / NO TELP -->
   <div class="contact-row centered">
     <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
-    <span class="contact-text">081234567890 (Nama)</span>
+    <span class="contact-text">
+        <a href="https://wa.me/62{{ substr($contact['phone'], 1) }}" target="_blank" style="text-decoration: none; color: inherit;">
+            {{ $contact['phone'] }} 
+            @if(!empty($contact['contact_person']))
+                ({{ $contact['contact_person'] }})
+            @endif
+        </a>
+    </span>
   </div>
+
+  <!-- EMAIL -->
   <div class="contact-row centered">
     <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-    <span class="contact-text">Loremipsum@gmail.com</span>
+    <span class="contact-text">
+        <a href="mailto:{{ $contact['email'] }}" style="text-decoration: none; color: inherit;">
+            {{ $contact['email'] }}
+        </a>
+    </span>
   </div>
+
 </div>
 
 @endsection

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -22,9 +23,7 @@ Route::get('/service', function () {
     return view('pages.service');
 });
 
-Route::get('/contact', function () {
-    return view('pages.contact-us');
-});
+Route::get('/contact', [ContactController::class, 'index'])->name('pages.contact-us');
 
 Route::get('/visi-misi', function () {
     return view('pages.visi-misi');
