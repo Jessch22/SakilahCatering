@@ -31,6 +31,7 @@
 
   @include('components.footer')
 
+  @include('components.wa-button')
   <script src="{{ asset('js/components/header.js')}}"></script>
 
   @stack('scripts')
