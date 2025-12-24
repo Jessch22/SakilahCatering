@@ -1,10 +1,46 @@
-.event-card{
+.event-card {
   max-width: 320px;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.event-card img{
+.event-card img {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
+  display: block;
+}
+
+.event-details {
+    padding: 12px;
+}
+
+.event-tag {
+    color: var(--color-primary, #d4af37);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.event-name {
+    font-weight: 700;
+    margin: 5px 0;
+    color: #333;
+}
+
+.event-location {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.event-date {
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 4px;
 }
