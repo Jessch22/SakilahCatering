@@ -1,0 +1,39 @@
+.testi-card{
+  background-color: var(--color-white);
+  padding: 18px;
+  max-width: 18vw;
+}
+
+.testi-card img{
+  width: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50px;
+  justify-content: center;
+  position: relative;
+  margin: -56px 0 0 0;
+}
+
+.testi-name{
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.testi-isi{
+  font-size: 12px;
+  text-align: justify;
+}
+
+@media (max-width: 900px) {
+  .testi-card {
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .testi-card>img{
+    margin: 0;
+  }
+}
