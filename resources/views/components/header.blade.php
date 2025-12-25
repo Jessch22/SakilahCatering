@@ -1,8 +1,13 @@
+@php
+    $brand = config('sakilah.nama_brand');
+    $logo_name = config('sakilah.logo');
+@endphp
+
 <header>
     <nav class="navbar">
         <div class="logo">
             <a href="{{ url('/') }}">
-                <img src="{{ asset('img/logo/Logo_Sakilah.png') }}" alt="Sakilah Catering Logo">
+                <img src="{{ asset('img/' . $logo_name) }}" alt="{{ $brand }}">
             </a>
         </div>
 
