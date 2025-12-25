@@ -125,6 +125,7 @@
   aspect-ratio: 1/1;
   height: 24vw;
   object-fit: cover;
+  min-height: 300px;
 }
 
 .about-us-isi{
@@ -143,7 +144,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .about-us-content{
     display: block;
   }
@@ -162,6 +163,13 @@
   overflow-x: auto;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
+}
+
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .menu-container::-webkit-scrollbar, .service-container::-webkit-scrollbar { 
