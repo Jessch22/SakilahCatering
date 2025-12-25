@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServiceController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -18,9 +19,7 @@ Route::get('/menu', function () {
     return view('pages.menu');
 });
 
-Route::get('/service', function () {
-    return view('pages.service');
-});
+Route::get('/layanan',[ServiceController::class, 'index'])->name('pages.services');
 
 Route::get('/contact', function () {
     return view('pages.contact-us');
