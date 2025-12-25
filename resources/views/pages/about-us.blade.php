@@ -1,3 +1,12 @@
+@php
+    $maps_link = config('sakilah.maps_link');
+    $instagram = config('sakilah.instagram');
+    $instagramlink = "https://www.instagram.com/" . $instagram . "/?utm_source=ig_embed&utm_campaign=loading";
+    $tiktok = config('sakilah.tiktok');
+    $tiktoklink = "https://www.tiktok.com/@" . $tiktok;
+    $tiktoklinkembed = "https://www.tiktok.com/@" . $tiktok . "?refer=embed";
+@endphp
+
 @extends('layouts.app')
 
 @section('title', 'Tentang Kami')
@@ -12,7 +21,7 @@
 
 @section('content')
     <div class="about-us-content">
-        <img class="about-us-image" src="{{ asset('img/asset/IMG-20250927-WA0074.jpg') }}" alt="Suasana Acara Catering">
+        <img class="about-us-image" src="{{ asset('img/asset/IMG-20250927-WA00741.jpg') }}" alt="Suasana Acara Catering">
         
         <div class="about-us-keterangan">            
             <p class="about-us-isi">
@@ -70,27 +79,40 @@
         <div class="map-container">
             <div class="map-info">
                 <p class="about-us-isi">
-                    Berbasis di <strong>Bekasi</strong>, Sakilah Catering siap menjangkau lokasi acara Anda di seluruh wilayah Jabodetabek. Jarak bukan halangan untuk menghadirkan hidangan terbaik di meja Anda.
+                    Berbasis di Bekasi, Sakilah Catering siap menjangkau lokasi acara Anda di seluruh wilayah Jabodetabek. Jarak bukan halangan untuk menghadirkan hidangan terbaik di meja Anda.
                 </p>
                 
-                <h4 class="about-us-subheading">Melayani Wilayah:</h4>
-                <ul class="area-list">
-                    <li class="area-badge">Jakarta Timur</li>
-                    <li class="area-badge">Jakarta Selatan</li>
-                    <li class="area-badge">Jakarta Pusat</li>
-                    <li class="area-badge">Jakarta Barat</li>
-                    <li class="area-badge">Jakarta Utara</li>
-                    <li class="area-badge">Kota Bekasi</li>
-                    <li class="area-badge">Kab. Bekasi</li>
-                    <li class="area-badge">Depok</li>
-                    <li class="area-badge">Bogor</li>
-                    <li class="area-badge">Tangerang</li>
+                <h4 class="about-us-subheading">Layanan Kami:</h4>
+                <div class="service-tags-container">
+                    <span class="service-tag">Wedding / Pernikahan</span>
+                    <span class="service-tag">Khitanan</span>
+                    <span class="service-tag">Ulang Tahun</span>
+                    <span class="service-tag">Seminar</span>
+                    <span class="service-tag">Arisan</span>
+                    <span class="service-tag">Rapat Kantor</span>
+                    <span class="service-tag">Pengajian</span>
+                    <span class="service-tag">Jasa Waiters</span>
+                    <span class="service-tag">Jasa WO</span>
+                </div>
+
+                <h4 class="about-us-subheading">Cakupan Wilayah:</h4>
+                <ul class="area-list-grid">
+                    <li><i class="fa-solid fa-map-pin"></i> Jakarta Timur</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Jakarta Selatan</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Jakarta Pusat</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Jakarta Barat</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Jakarta Utara</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Kota Bekasi</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Kab. Bekasi</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Depok</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Bogor</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Tangerang</li>
                 </ul>
             </div>
             
             <div class="map-frame">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.87187068415398!2d106.94681384558567!3d-6.270315200364007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d007d056607%3A0x87255faeb2c27b34!2sSakilah%20Catering!5e0!3m2!1sid!2sid!4v1766593568049!5m2!1sid!2sid" 
+                    src="{{ $maps_link }}" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
@@ -108,10 +130,10 @@
     <div class="social-media-wrapper">
         <div class="social-card instagram-card">
             <blockquote class="instagram-media" 
-                data-instgrm-permalink="https://www.instagram.com/sakilahcatering/?utm_source=ig_embed&utm_campaign=loading" 
+                data-instgrm-permalink="{{ $instagramlink }}" 
                 data-instgrm-version="14">
                 <div style="padding:16px;">
-                    <a href="https://www.instagram.com/sakilahcatering/?utm_source=ig_embed&utm_campaign=loading" target="_blank" style="text-decoration:none;">
+                    <a href="{{ $instagramlink }}"  target="_blank" style="text-decoration:none;">
                     Lihat Instagram Sakilah Catering
                     </a>
                 </div>
@@ -120,13 +142,13 @@
 
         <div class="social-card tiktok-card">
             <blockquote class="tiktok-embed" 
-                cite="https://www.tiktok.com/@sakilahcatering" 
-                data-unique-id="sakilahcatering" 
+                cite="{{ $tiktoklink }}" 
+                data-unique-id="{{ $tiktok }}" 
                 data-embed-type="creator" 
                 style="max-width: 780px; min-width: 288px;">
                 <section>
-                    <a target="_blank" href="https://www.tiktok.com/@sakilahcatering?refer=embed">
-                    @sakilahcatering
+                    <a target="_blank" href="{{ $tiktoklinkembed }}">
+                    @ {{ $tiktok }}
                     </a>
                 </section>
             </blockquote>
