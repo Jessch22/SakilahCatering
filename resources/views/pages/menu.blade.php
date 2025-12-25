@@ -1,251 +1,53 @@
 @extends('layouts.app')
 
-@section('title', 'Menu Kami')
+@section('title', 'Daftar Menu')
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/pages/menu.css')}}">
-<link rel="stylesheet" href="{{ asset('css/pages/menucard.css')}}">
-<link rel="stylesheet" href="{{ asset('css/components/eventcard.css')}}">
-<link rel="stylesheet" href="{{ asset('css/components/logomarquee.css')}}">
+<link rel="stylesheet" href="{{ asset('css/components/menucard.css')}}">
 @endpush
 
-<!-- cuma ganti nama -->
-<!-- title hero ambil dari app.blade -->
-@section('title-hero', 'Menu Kami') 
+@section('title-hero', 'Menu Kami')
 
 @section('content')
-<div class="ricebox-container">
-    <h2 class="title-text">Buffet</h2>
+
+<!-- Prasmanan -->
+<div class="menu-section">
+    <div class="section-header">
+        <h2>Paket Prasmanan</h2>
+        <p>Pilihan paket lengkap untuk acara pernikahan, khitanan, atau gathering Anda.</p>
+    </div>
+
+    <div class="pricing-grid">
+        @foreach($buffetPackages as $package)
+            <x-menu-card :item="$package" :waLink="$waLink" />
+        @endforeach
+    </div>
 </div>
 
-<div class="card-container">
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">MENU A</h2>
-            <ul class="menu-items">
-                <li>Nasi Putih</li>
-                <li>Pilihan Sop</li>
-                <li>Pilihan Ayam</li>
-                <li>Menu Pelengkap</li>
-                <li>Kerupuk Udang</li>
-                <li>Air Mineral</li>
-                <li>Buah Potong</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
+<!-- Gubugan -->
+<div class="gubugan-section">
+    <div class="section-header">
+        <h2>Menu Gubugan Favorit</h2>
+        <p>Pelengkap sempurna untuk memanjakan tamu undangan Anda.</p>
     </div>
 
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">MENU B</h2>
-            <ul class="menu-items">
-                <li>Nasi Putih</li>
-                <li>Pilihan Sop</li>
-                <li>Pilihan Daging / Ikan</li>
-                <li>Menu Pelengkap</li>
-                <li>Kerupuk Udang</li>
-                <li>Air Mineral</li>
-                <li>Buah Potong</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
+    <div class="gubugan-grid">
+        @foreach($gubuganList as $gubugan)
+        <div class="gubugan-item">
+            <span class="gubugan-name">{{ $gubugan['name'] }}</span>
+            <span class="gubugan-dots"></span>
+            <span class="gubugan-price">{{ $gubugan['price'] }}</span>
         </div>
+        @endforeach
     </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">MENU C</h2>
-            <ul class="menu-items">
-                <li>Nasi Putih</li>
-                <li>Pilihan Sop</li>
-                <li>Pilihan Ayam</li>
-                <li>Olahan Daging / Ikan</li>
-                <li>Menu Pelengkap</li>
-                <li>Kerupuk Udang</li>
-                <li>Air Mineral</li>
-                <li>Buah Potong</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
+    
+    <div class="gubugan-cta">
+        <p>Ingin lihat menu gubugan lainnya? Ada lebih dari 50+ pilihan menu!</p>
+        <a href="{{ $waLink }}?text=Halo,%20boleh%20minta%20price%20list%20lengkap%20menu%20gubugan?" class="btn-outline">
+            <i class="fa-brands fa-whatsapp"></i> Minta Price List Lengkap
+        </a>
     </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">MENU D</h2>
-            <ul class="menu-items">
-                <li>Nasi Putih</li>
-                <li>Pilihan Sop</li>
-                <li>Pilihan Ayam</li>
-                <li>Olahan Daging / Ikan</li>
-                <li>Menu Pelengkap</li>
-                <li>Kerupuk Udang</li>
-                <li>Air Mineral</li>
-                <li>Buah Potong</li>
-                <li>Puding + Vla</li>
-                <li>Softdrink</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">MENU E</h2>
-            <ul class="menu-items">
-                <li>Nasi Putih</li>
-                <li>Nasi Goreng</li>
-                <li>Pilihan Sop</li>
-                <li>Pilihan Ayam</li>
-                <li>Olahan Daging / Ikan</li>
-                <li>Menu Pelengkap</li>
-                <li>Kerupuk Udang</li>
-                <li>Air Mineral</li>
-                <li>Buah Potong</li>
-                <li>Softdrink</li>
-            </ul>
-                <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">MENU LENGKAP</h2>
-            <ul class="menu-items">
-                <li>Nasi Putih</li>
-                <li>Nasi Goreng</li>
-                <li>Pilihan Sop</li>
-                <li>Pilihan Ayam</li>
-                <li>Olahan Daging</li>
-                <li>Olahan Ikan</li>
-                <li>Menu Pelengkap</li>
-                <li>Kerupuk Udang</li>
-                <li>Air Mineral</li>
-                <li>Buah Potong</li>
-                <li>Puding + Vla</li>
-                <li>Mini Cake</li>
-                <li>Softdrink</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="ricebox-container">
-    <h2 class="title-text">Rice Box</h2>
-</div>
-
-<div class="card-container">
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">PAKET A</h2>
-            <ul class="menu-items">
-                <li>Nasi</li>
-                <li>Ayam</li>
-                <li>Tumisan</li>
-                <li>Kerupuk</li>
-                <li>Air Minum</li>
-                <li>Buah</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">PAKET B</h2>
-            <ul class="menu-items">
-                <li>Nasi</li>
-                <li>Daging</li>
-                <li>Tumisan</li>
-                <li>Kerupuk</li>
-                <li>Air Minum</li>
-                <li>Buah</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-card">
-        <div class="menu-card-image"></div>
-        <div class="menu-card-content">
-            <h2 class="menu-title">PAKET C</h2>
-            <ul class="menu-items">
-                <li>Nasi</li>
-                <li>Ayam</li>
-                <li>Daging</li>
-                <li>Tumisan</li>
-                <li>Kerupuk</li>
-                <li>Air Minum</li>
-                <li>Buah</li>
-            </ul>
-            <div class="cta-container">
-                <p class="cta-info">KLIK UNTUK INFO SELENGKAPNYA</p>
-                <a href="#" class="cta-button">Pesan Sekarang</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="gabungan-container">
-    <h2 class="title-text">Gubugan</h2>
-</div>
-
-<div class="card-container">
-    <section class="gubugan-section">
-        <div class="menu-container">
-            <ul class="menu-list">
-                <li>Bakwan Malang</li>
-                <li>Mie Bakso</li>
-                <li>Solo Betawi</li>
-                <li>Sate Padang</li>
-                <li>Kambing Guling</li>
-                <li>Dimsum</li>
-            </ul>
-
-            <ul class="menu-list">
-                <li>Siomay</li>
-                <li>Nasi Gudeg</li>
-                <li>Es Dawet</li>
-                <li>Es Doger</li>
-                <li>Ice Cream Waffle</li>
-                <li>dll...</li>
-            </ul>
-        </div>
-    </section>
-
 </div>
 
 @endsection
