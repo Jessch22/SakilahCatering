@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
 
@@ -12,11 +13,9 @@ Route::get('/event', function () {
     return view('pages.home');
 });
 
-Route::get('/menu', function () {
-    return view('pages.menu');
-});
+Route::get('/menu', [MenuController::class, 'index'])->name('pages.menu');
 
-Route::get('/service', function () {
+Route::get('/layanan', function () {
     return view('pages.service');
 });
 
