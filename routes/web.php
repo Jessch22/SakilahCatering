@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
@@ -10,9 +11,7 @@ Route::get('/', [HomeController::class, 'index'])->name('pages.home');
 
 Route::get('/about-us', [AboutController::class, 'index'])->name('pages.about-us');
 
-Route::get('/event', function () {
-    return view('pages.home');
-});
+Route::get('/event', [EventController::class, 'index'])->name('pages.event');
 
 Route::get('/menu', [MenuController::class, 'index'])->name('pages.menu');
 
