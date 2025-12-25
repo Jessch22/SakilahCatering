@@ -39,11 +39,6 @@ class AboutData
             // FITUR WHY CHOOSE US
             'features' => [
                 [
-                    'icon'  => 'fa-solid fa-money-bill-wave',
-                    'title' => 'Harga Transparan',
-                    'desc'  => 'Mulai dari 28rb/pax hingga paket All-in 60 Juta. Tanpa biaya tersembunyi.'
-                ],
-                [
                     'icon'  => 'fa-solid fa-utensils',
                     'title' => 'Halal & Higienis',
                     'desc'  => 'Prioritas utama pada kebersihan dapur serta penggunaan bahan baku yang 100% halal.'
