@@ -44,7 +44,7 @@
 
           <div class="contact-item address">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Jl. KH. Moh. Saman No. 88, Jatiramat, Kec. Jatiasih, Kota Bks, Jawa Barat 17421</span>
+            <span>Jl. KH. Moh. Saman No. 8B, Jatiramat, Kec. Jatiasih, Kota Bks, Jawa Barat 17422</span>
           </div>
         </div>
     </div>
