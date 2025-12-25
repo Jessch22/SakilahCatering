@@ -17,7 +17,7 @@
                 </ul>
             </li>
             <li><a href="{{ url('/event') }}">Event Kami</a></li>
-            <li><a href="{{ url('/service') }}">Layanan</a></li>
+            <li><a href="{{ url('/layanan') }}">Layanan</a></li>
             <li><a href="{{ url('/menu') }}">Menu</a></li>
         </ul>
         <div class="contact-btn">
