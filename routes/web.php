@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\AboutController;
@@ -18,9 +19,7 @@ Route::get('/layanan', function () {
     return view('pages.service');
 });
 
-Route::get('/contact', function () {
-    return view('pages.contact-us');
-});
+Route::get('/contact', [ContactController::class, 'index'])->name('pages.contact-us');
 
 Route::get('/visi-misi', function () {
     return view('pages.visi-misi');
