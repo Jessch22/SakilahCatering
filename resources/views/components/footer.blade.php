@@ -1,12 +1,32 @@
 <!-- resources/views/layouts/footer.blade.php -->
+@php
+    $phone = config('sakilah.whatsapp');
+    $email = config('sakilah.email');
+    $brand = config('sakilah.nama_brand');
+    if (substr($phone, 0, 1) == '0') {
+        $waLink = '62' . substr($phone, 1);
+    } else {
+        $waLink = $phone;
+    }
+    $instagram = 'https://www.instagram.com/' . config('sakilah.instagram');
+    $tiktok = 'https://www.tiktok.com/@' . config('sakilah.tiktok');
+@endphp
+
+
 <footer>
     <div class="footer-container">
         <div class="footer-section">
-            <h1>SAKILAH CATERING</h1>
+            <h1>{{ $brand }}</h1>
             <div class="social-icons">
-                <a href="https://www.instagram.com/sakilahcatering" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@sakilahcatering" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="{{ $instagram }}" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="{{ $tiktok }}" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="mailto:{{ $email }}">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
 
@@ -30,22 +50,26 @@
         </div>
 
         <div class="footer-section">
-          <h3>KONTAK KAMI</h3>
+            <h3>KONTAK KAMI</h3>
+            <!-- No Telp -->
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/{{ $waLink }}" target="_blank">
+                    {{ $phone }}
+                </a>
+            </div>
 
-          <div class="contact-item">
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/6285797888983" target="_blank">+62 857-9788-8983</a>
-          </div>
+            <!-- Email -->
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:{{ $email }}">{{ $email }}</a>
+            </div>
 
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:sakilahcatering@gmail.com">sakilahcatering@gmail.com</a>
-          </div>
-
-          <div class="contact-item address">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Jl. KH. Moh. Saman No. 88, Jatiramat, Kec. Jatiasih, Kota Bks, Jawa Barat 17421</span>
-          </div>
+            <!-- Alamat -->
+            <div class="contact-item address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>{{ config('sakilah.alamat') }}</span>
+            </div>
         </div>
     </div>
 
