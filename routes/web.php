@@ -1,14 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
 
 Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/about-us', function () {
-    return view('pages.about-us');
-});
+Route::get('/about-us', [AboutController::class, 'index'])->name('pages.about-us');
 
 Route::get('/event', function () {
     return view('pages.home');
