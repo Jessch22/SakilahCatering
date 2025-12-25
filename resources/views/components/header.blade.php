@@ -7,7 +7,7 @@
     <nav class="navbar">
         <div class="logo">
             <a href="{{ url('/') }}">
-                <img src="{{ asset('img/' . $logo_name) }}" alt="{{ $brand }}">
+                <img src="{{ asset('img/logo/' . $logo_name) }}" alt="{{ $brand }}">
             </a>
         </div>
 
@@ -22,7 +22,7 @@
                 </ul> -->
             </li>
             <li><a href="{{ url('/event') }}">Event Kami</a></li>
-            <li><a href="{{ url('/service') }}">Layanan</a></li>
+            <li><a href="{{ url('/layanan') }}">Layanan</a></li>
             <li><a href="{{ url('/menu') }}">Menu</a></li>
         </ul>
         <div class="contact-btn">
