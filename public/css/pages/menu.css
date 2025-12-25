@@ -2,6 +2,8 @@
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Container Menu */
@@ -52,48 +54,66 @@
 /* Style Gubugan List */
 .gubugan-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem 3rem;
-    background: #fff;
+    
+    background: var(--color-white);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gubugan-item {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 1rem;
 }
 
 .gubugan-name {
     font-weight: 600;
-    color: #333;
+    color: var(--color-dark-grey);
+    text-align: left;
+    flex-shrink: 1;
+    white-space: normal;
+    max-width: 60%;
+    line-height: 1.2;
 }
 
 .gubugan-dots {
     flex-grow: 1;
     border-bottom: 2px dotted #ccc;
-    margin: 0 10px 5px 10px;
+    margin: 0 6px 4px 6px;
+    min-width: 10px;
+    opacity: 0.6;
 }
 
 .gubugan-price {
     color: var(--color-primary, #1e3058);
     font-weight: 700;
+    text-align: right;
+    
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .gubugan-cta {
     text-align: center;
     margin-top: 3rem;
+    padding: 0 1rem;
 }
 
 .btn-outline {
     display: inline-block;
     margin-top: 1rem;
     padding: 10px 24px;
-    border: 2px solid var(--color-primary, #1e3058);
-    color: var(--color-primary, #1e3058);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -101,12 +121,37 @@
 }
 
 .btn-outline:hover {
-    background: var(--color-primary, #1e3058);
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-white);
 }
 
 @media (max-width: 768px) {
+    .gubugan-section {
+        padding: 0 1rem;
+    }
+
     .gubugan-grid {
         grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+    
+    .gubugan-item {
+        font-size: 0.9rem;
+    }
+    
+    .gubugan-name {
+        max-width: 55%;
+    }
+}
+
+@media (max-width: 375px) {
+    .gubugan-grid {
+        padding: 1rem 0.5rem; /* Padding lebih tipis lagi */
+    }
+    
+    .gubugan-item {
+        font-size: 0.85rem; /* Font makin kecil agar muat */
+        margin-bottom: 10px;
     }
 }

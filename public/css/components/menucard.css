@@ -4,24 +4,20 @@
     border-radius: 12px;
     padding: 2rem;
     position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Shadow halus */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid #eef2f6;
     transition: all 0.3s ease;
-    
-    /* FLEXBOX SETUP AGAR TINGGI SAMA & RAPI */
     display: flex;
     flex-direction: column;
-    height: 100%; /* Memaksa kartu memenuhi tinggi grid container */
+    height: 100%;
     width: 100%;
-    
-    /* Mencegah kartu melebar sendiri */
     box-sizing: border-box; 
 }
 
 /* Hover Effect */
 .menu-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(45, 108, 222, 0.15); /* Shadow warna Primary */
+    box-shadow: 0 10px 30px rgba(45, 108, 222, 0.15);
     border-color: var(--color-primary);
 }
 
@@ -85,9 +81,9 @@
     border-radius: 20px;
 }
 
-/* Body (List Menu) */
+/* List Menu */
 .menu-body {
-    flex-grow: 1; /* Mendorong tombol ke bawah */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -110,7 +106,7 @@
 
 /* Icon Check */
 .menu-list li i {
-    color: var(--color-primary); /* Warna Biru */
+    color: var(--color-primary);
     font-size: 1rem;
     margin-top: 3px;
     flex-shrink: 0;
@@ -147,7 +143,7 @@
 
 /* List Include (Bintang) */
 .menu-list.include li i {
-    color: #FFD700; /* Tetap emas untuk bintang, atau ganti var(--color-accent) */
+    color: var(--color-accent);
     font-size: 0.9rem;
 }
 
@@ -160,8 +156,8 @@
     display: block;
     width: 100%;
     padding: 14px 0;
-    background-color: var(--color-accent); /* Kuning */
-    color: var(--color-black); /* Text Hitam */
+    background-color: var(--color-accent);
+    color: var(--color-black);
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
@@ -172,6 +168,6 @@
 }
 
 .menu-btn:hover {
-    background-color: var(--color-primary); /* Hover jadi Biru */
-    color: var(--color-white); /* Text jadi Putih */
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
