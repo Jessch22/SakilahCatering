@@ -1,4 +1,13 @@
-<a href="https://wa.me/6285797888983" 
+@php
+  $phone = config('sakilah.whatsapp');
+  if (substr($phone, 0, 1) == '0') {
+        $waLink = '62' . substr($phone, 1);
+    } else {
+        $waLink = $phone;
+    }
+@endphp
+
+<a href="https://wa.me/{{ $waLink }}"
   class="whatsapp-button" 
   target="_blank">
   <i class="fab fa-whatsapp"></i>
