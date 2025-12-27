@@ -7,14 +7,14 @@ class HomeData
     public static function getData()
     {
         return [
-            'hero' => [
+            'hero' => (object) [
                 'title' => 'Sakilah Catering',
                 'slogan' => 'Wedding Organizer & Catering Service',
                 'button_text' => 'Pesan Sekarang',
             ],
 
             // 2. TENTANG KAMI (HOME VERSION)
-            'about' => [
+            'about' => (object) [
                 'image' => 'img/asset/IMG-20250927-WA0054.jpg',
                 'button_text' => 'Selengkapnya',
                 'button_url' => url('/about-us'),
@@ -32,7 +32,7 @@ class HomeData
             ],
 
             // 3. PORTOFOLIO
-            'portfolio' => [
+            'portfolio' => (object) [
                 'title' => 'Portofolio Catering',
                 'images' => [
                     'img/asset/IMG-20250927-WA0055.jpg',
@@ -45,13 +45,13 @@ class HomeData
 
             // 4. LAYANAN (SERVICES)
             'services' => [
-                [
+                (object) [
                     'title' => 'PAKET CATERING ONLY',
                     'desc' => 'Mulai dari Rp28.000/pax!',
                     'image' => 'img/asset/IMG-20250927-WA0062.jpg',
                     'button_text' => 'Tanya Selengkapnya'
                 ],
-                [
+                (object) [
                     'title' => 'PAKET ALL-IN WEDDING',
                     'desc' => 'Mulai dari Rp60juta!',
                     'image' => 'img/asset/IMG-20250927-WA0088.jpg',
@@ -67,9 +67,9 @@ class HomeData
 
             // 6. ACHIEVEMENTS
             'achievements' => [
-                ['number' => '2', 'desc' => 'Tahun Pengalaman'],
-                ['number' => '100+', 'desc' => 'Acara Dilayani'],
-                ['number' => '100%', 'desc' => 'Halal & Higienis'],
+                (object) ['number' => '2', 'desc' => 'Tahun Pengalaman'],
+                (object) ['number' => '100+', 'desc' => 'Acara Dilayani'],
+                (object) ['number' => '100%', 'desc' => 'Halal & Higienis'],
             ]
         ];
     }

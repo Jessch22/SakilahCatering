@@ -1,3 +1,9 @@
+@php
+    $aboutImg = Str::startsWith($about->image, 'img/') 
+                ? asset($about->image) 
+                : asset('storage/' . $about->image);
+@endphp
+
 @extends('layouts.homeapp')
 
 @section('title', 'Beranda')
@@ -16,10 +22,10 @@
 <div class="hero-banner">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1 class="hero-title">{{ $hero['title'] }}</h1>
-    <div class="hero-slogan">{{ $hero['slogan'] }}</div>
+    <h1 class="hero-title">{{ $hero->title }}</h1>
+    <div class="hero-slogan">{{ $hero->slogan }}</div>
     <a href="{{ $waLink }}?text=Halo%20Sakilah%20Catering,%20saya%20mau%20tanya-tanya" class="hero-btn" target="_blank">
-        {{ $hero['button_text'] }}
+        {{ $hero->button_text }}
     </a>
   </div>
 </div>
@@ -34,23 +40,23 @@
     <p class="accent-content"></p>
   </div>
   <div class="about-us-content">
-    <img class="about-us-image" src="{{ asset($about['image']) }}" alt="Tentang Sakilah Catering">
+    <img class="about-us-image" src="{{ $aboutImg }}" alt="Tentang Sakilah">
     <div class="about-us-keterangan">
         <div class="about-us-isi">
-          {!! $about['content'] !!}
+          {!! $about->content !!}
         </div>
-      <a href="{{ $about['button_url'] }}" class="about-us-btn">{{ $about['button_text'] }}</a>
+      <a href="{{ $about->button_url }}" class="about-us-btn">{{ $about->button_text }}</a>
     </div>
   </div>
 </div>
 
 <!-- 2. PORTOFOLIO -->
 <div class="blue-section cp">
-  <h2 class="center">{{ $portfolio['title'] }}</h2>
+  <h2 class="center">{{ $portfolio->title }}</h2>
   <div class="cp-wrapper">
     <button class="prev"><i class="fas fa-chevron-left"></i></button>
     <div class="cp-container">
-      @foreach($portfolio['images'] as $img)
+      @foreach($portfolio->images as $img)
         <img src="{{ asset($img) }}" alt="Portofolio Event">
       @endforeach
     </div>
@@ -58,7 +64,7 @@
   </div>
   
   <div class="center" style="margin-top: 40px;">
-    <a href="{{ $portfolio['button_url'] }}" class="btn-gallery">{{ $portfolio['button_text'] }}</a>
+    <a href="{{ $portfolio->button_url }}" class="btn-gallery">{{ $portfolio->button_text }}</a>
   </div>
 </div>
 
@@ -73,7 +79,7 @@
       @foreach($services as $item)
         <x-card-hover 
             :item="$item" 
-            :whatsappLink="$waLink . '?'" 
+            :whatsappLink="$waLink" 
         />
       @endforeach
 
@@ -116,8 +122,8 @@
     
     @foreach($achievements as $ach)
     <div class="achievement-item">
-        <span class="achievement-main">{{ $ach['number'] }}</span>
-        <span class="achievement-desc">{{ $ach['desc'] }}</span>
+        <span class="achievement-main">{{ $ach->number }}</span>
+        <span class="achievement-desc">{{ $ach->desc }}</span>
     </div>
     @endforeach
 

@@ -17,7 +17,7 @@ class MenuData
         return [
             [
                 'name' => 'MENU A',
-                'price' => '28.000',
+                'price' => '28000',
                 'min_order' => '300 Pack',
                 'is_popular' => true,
                 'items' => [
@@ -33,7 +33,7 @@ class MenuData
             ],
             [
                 'name' => 'MENU B',
-                'price' => '31.000',
+                'price' => '31000',
                 'min_order' => '300 Pack',
                 'is_popular' => false,
                 'items' => [
@@ -49,7 +49,7 @@ class MenuData
             ],
             [
                 'name' => 'MENU C',
-                'price' => '34.000',
+                'price' => '34000',
                 'min_order' => '300 Pack',
                 'is_popular' => false,
                 'items' => [
@@ -66,7 +66,7 @@ class MenuData
             ],
             [
                 'name' => 'MENU D',
-                'price' => '38.000',
+                'price' => '38000',
                 'min_order' => '300 Pack',
                 'is_popular' => true,
                 'items' => [
@@ -85,7 +85,7 @@ class MenuData
             ],
              [
                 'name' => 'MENU LENGKAP',
-                'price' => '47.000',
+                'price' => '47000',
                 'min_order' => '300 Pack',
                 'is_popular' => false,
                 'items' => [
@@ -111,12 +111,12 @@ class MenuData
     public static function getGubuganFavorites()
     {
         return [
-            ['name' => 'Kambing Guling', 'price' => '2.000.000/Ekor'],
-            ['name' => 'Zuppa Soup', 'price' => '18.000/Porsi'],
-            ['name' => 'Bakwan Malang', 'price' => '16.000/Porsi'],
-            ['name' => 'Siomay / Batagor', 'price' => '15.000/Porsi'],
-            ['name' => 'Sate Ayam + Lontong', 'price' => '15.000/Porsi'],
-            ['name' => 'Es Krim + Waffle', 'price' => '15.000/Porsi'],
+            ['name' => 'Kambing Guling', 'price' => '2000000/Ekor'],
+            ['name' => 'Zuppa Soup', 'price' => '18000/Porsi'],
+            ['name' => 'Bakwan Malang', 'price' => '16000/Porsi'],
+            ['name' => 'Siomay / Batagor', 'price' => '15000/Porsi'],
+            ['name' => 'Sate Ayam + Lontong', 'price' => '15000/Porsi'],
+            ['name' => 'Es Krim + Waffle', 'price' => '15000/Porsi'],
         ];
     }
 }
