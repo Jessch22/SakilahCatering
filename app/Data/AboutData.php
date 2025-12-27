@@ -34,21 +34,21 @@ class AboutData
                 </p>
                 EOT,
 
-            'image' => 'IMG-20250927-WA00741.jpg',
+            'image' => 'img/asset/IMG-20250927-WA00741.jpg',
 
             // FITUR WHY CHOOSE US
             'features' => [
-                [
+                (object) [
                     'icon'  => 'fa-solid fa-utensils',
                     'title' => 'Halal & Higienis',
                     'desc'  => 'Prioritas utama pada kebersihan dapur serta penggunaan bahan baku yang 100% halal.'
                 ],
-                [
+                (object) [
                     'icon'  => 'fa-solid fa-hand-holding-heart',
                     'title' => 'Pelayanan Prima',
                     'desc'  => 'Tim berpengalaman yang siap melayani kebutuhan acara dari awal hingga akhir.'
                 ],
-                [
+                (object) [
                     'icon'  => 'fa-solid fa-map-location-dot',
                     'title' => 'Jangkauan Luas',
                     'desc'  => 'Siap melayani acara di seluruh wilayah Jabodetabek.'

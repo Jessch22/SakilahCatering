@@ -1,9 +1,3 @@
-@php
-    $imageRaw = $about['image'];
-    $isUrl = \Illuminate\Support\Str::startsWith($imageRaw, ['http://', 'https://']);
-    $finalImage = $isUrl ? $imageRaw : asset('img/asset/' . $imageRaw);
-@endphp
-
 @extends('layouts.app')
 
 @section('title', 'Tentang Kami')
@@ -19,10 +13,10 @@
 @section('content')
     <div class="about-us-content">
         <!-- GAMBAR -->
-        <img class="about-us-image" src="{{ asset($finalImage) }}" alt="Suasana Acara Catering">
+        <img class="about-us-image" src="{{ $finalImage }}" alt="Tentang Sakilah Catering">
         
         <div class="about-us-keterangan">
-            {!! $htmlContent !!}
+            {!! $about->content !!}
         </div>
     </div>
 
@@ -30,11 +24,11 @@
         <h2 class="section-title">Kenapa Memilih Kami?</h2>
         <div class="features-grid">
             <!-- FEATURES -->
-            @foreach($about['features'] as $feature)
+            @foreach($about->features as $feature)
             <div class="feature-card">
-                <div class="feature-icon"><i class="{{ $feature['icon'] }}"></i></div>
-                <h3 class="feature-title">{{ $feature['title'] }}</h3>
-                <p class="feature-desc">{{ $feature['desc'] }}</p>
+                <div class="feature-icon"><i class="{{ $feature->icon }}"></i></div>
+                <h3 class="feature-title">{{ $feature->title }}</h3>
+                <p class="feature-desc">{{ $feature->desc }}</p>
             </div>
             @endforeach
         </div>
@@ -51,7 +45,7 @@
                 <h4 class="about-us-subheading">Layanan Kami:</h4>
                 <div class="service-tags-container">
                     <!-- BADGE SERVICES -->
-                    @foreach($about['services'] as $service)
+                    @foreach($about->services as $service)
                         <span class="service-tag">{{ $service }}</span>
                     @endforeach
                 </div>
@@ -59,7 +53,7 @@
                 <h4 class="about-us-subheading">Cakupan Wilayah:</h4>
                 <ul class="area-list-grid">
                     <!-- AREA -->
-                    @foreach($about['areas'] as $area)
+                    @foreach($about->areas as $area)
                         <li><i class="fa-solid fa-map-pin"></i> {{ $area }}</li>
                     @endforeach
                 </ul>
@@ -86,11 +80,11 @@
         <!-- INSTAGRAM -->
         <div class="social-card instagram-card">
             <blockquote class="instagram-media" 
-                data-instgrm-permalink="{{ $social['instagram_embed'] }}" 
+                data-instgrm-permalink="{{ $social->instagram_embed }}" 
                 data-instgrm-version="14">
                 <div style="padding:16px;">
-                    <a href="{{ $social['instagram_embed'] }}" target="_blank" style="text-decoration:none;">
-                    {{ $social['instagram_text'] }}
+                    <a href="{{ $social->instagram_embed }}" target="_blank" style="text-decoration:none;">
+                    {{ $social->instagram_text }}
                     </a>
                 </div>
             </blockquote>
@@ -99,13 +93,13 @@
         <!-- TIKTOK -->
         <div class="social-card tiktok-card">
             <blockquote class="tiktok-embed" 
-                cite="{{ $social['tiktok_url'] }}" 
-                data-unique-id="{{ $social['tiktok_username'] }}" 
+                cite="{{ $social->tiktok_url }}" 
+                data-unique-id="{{ $social->tiktok_username }}" 
                 data-embed-type="creator" 
                 style="max-width: 780px; min-width: 288px;">
                 <section>
-                    <a target="_blank" href="{{ $social['tiktok_embed'] }}">
-                    @ {{ $social['tiktok_username'] }}
+                    <a target="_blank" href="{{ $social->tiktok_embed }}">
+                    @ {{ $social->tiktok_username }}
                     </a>
                 </section>
             </blockquote>
