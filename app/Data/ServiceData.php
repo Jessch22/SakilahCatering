@@ -24,17 +24,17 @@ class ServiceData
     public static function getAll()
     {
         return [
-            [
+            (object) [
                 'title' => 'PAKET CATERING ONLY',
                 'price_highlight' => 'Start from 28K/pax.',
                 'description' => 'Include Set meja prasmanan, peralatan makan sesuai pax, meja dessert, tim waiters, dan dekorasi catering.',
-                'image' => 'IMG-20250927-WA0062.jpg', 
+                'image' => 'img/asset/IMG-20250927-WA0062.jpg', 
             ],
-            [
+            (object) [
                 'title' => 'PAKET ALL-IN WEDDING',
                 'price_highlight' => 'Start from 60Juta.',
                 'description' => 'Include venue, catering, gubugan, dekorasi, WO & MC, Rias & Busana, Entertainment, dan Dokumentasi.',
-                'image' => 'IMG-20250927-WA0088.jpg',
+                'image' => 'img/asset/IMG-20250927-WA0088.jpg',
             ],
         ];
     }
